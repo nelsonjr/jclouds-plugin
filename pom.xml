@@ -110,6 +110,11 @@ limitations under the License.
         <artifactId>jenkins-core</artifactId>
         <version>${jenkins.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.jclouds</groupId>
+        <artifactId>jclouds-all</artifactId>
+        <version>2.1.0-SNAPSHOT</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <build>
@@ -196,6 +201,13 @@ limitations under the License.
     <repository>
       <id>repo.jenkins-ci.org</id>
       <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+    <repository>
+      <id>jclouds-snapshots</id>
+      <url>https://repository.apache.org/content/repositories/snapshots</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
     </repository>
   </repositories>
   <pluginRepositories>
